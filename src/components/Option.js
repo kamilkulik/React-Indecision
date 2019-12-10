@@ -5,9 +5,9 @@ const Option = (props) => {
       props.handleDeleteOption(props.optionText);
     }
     return (
-      <div>
-        {props.optionText}
-        <button onClick={handleClick}>Remove</button>
+      <div className="option">
+        <p className="option__text">{props.count}. {props.optionText}</p>
+        <button onClick={handleClick} className="button button--link">Remove</button>
       </div>
     )
   }
